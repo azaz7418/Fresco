@@ -1,4 +1,4 @@
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { FaFacebook, FaFacebookF, FaGooglePlusG, FaQuoteLeft, FaQuoteRight, FaTwitter } from "react-icons/fa";
 
 /* eslint-disable react/no-unescaped-entities */
 const testimonials = [
@@ -180,9 +180,19 @@ const Home = () => {
                 </div>
               </div>
             ))}
-            <div className="text-center text-black font-bold">
-              <h1>Check Out Our Reviews</h1>
-              <div></div>
+          </div>
+          <div className=" relative text-center text-black font-bold pb-6">
+            <h1>Check Out Our Reviews</h1>
+            <div className="flex items-center justify-center text-white gap-5">
+              <div className=" p-3 bg-accent hover:bg-accent-hover rounded-full">
+                <FaFacebookF />
+              </div>
+              <div className=" p-3 bg-accent hover:bg-accent-hover rounded-full">
+                <FaTwitter  />
+              </div>
+              <div className=" p-3 bg-accent hover:bg-accent-hover rounded-full">
+                <FaGooglePlusG  />
+              </div>
             </div>
           </div>
         </div>
