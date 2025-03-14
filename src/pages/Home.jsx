@@ -180,6 +180,10 @@ const Home = () => {
                 </div>
               </div>
             ))}
+            <div className="text-center text-black font-bold">
+              <h1>Check Out Our Reviews</h1>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>
