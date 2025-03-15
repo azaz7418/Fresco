@@ -1,4 +1,4 @@
-import { FaFacebook, FaFacebookF, FaGooglePlusG, FaQuoteLeft, FaQuoteRight, FaTwitter } from "react-icons/fa";
+import {  FaFacebookF, FaGooglePlusG, FaQuoteLeft, FaQuoteRight, FaTwitter } from "react-icons/fa";
 
 /* eslint-disable react/no-unescaped-entities */
 const testimonials = [
@@ -60,7 +60,6 @@ const Home = () => {
       </div>
 
       {/* section 02 */}
-
       <div
         className="relative bg-cover bg-no-repeat bg-center bg-fixed py-20 px-5 "
         style={{
@@ -111,7 +110,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* section 03 */}
+
+                                    {/* section 04 */}
       {/* part 01 */}
       <div className="bg-primary relative py-10 px-5 grid grid-cols-2 h-fit">
         <div className="relative w-full">
@@ -148,6 +148,8 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+
       {/* part 02 */}
       <div
         className=" mx-auto  relative bg-white text-black  bg-no-repeat px-5"

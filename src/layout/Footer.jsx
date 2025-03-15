@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div
-      className=" py-16 px-7 bg-cover bg-center flex flex-col gap-6 items-center"
+      className=" py-16 px-7 bg-cover bg-center flex flex-col gap-6 items-center z-10"
       style={{
         backgroundImage:
           "url(https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/01/Prepare-dish-image.jpg)",

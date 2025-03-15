@@ -9,7 +9,7 @@ const Layout = () => {
   return (
     <body className=" body *:m-0 *:box-border min-h-screen flex flex-col">
       <Header />
-      <div className=" ">
+      <div className="">
         <Outlet />
       </div>
       <Footer />
