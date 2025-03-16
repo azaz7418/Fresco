@@ -110,7 +110,7 @@ const Menu = () => {
             >
               {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
 
-              <div className=" relative p-6 inset-0 rounded-2xl bg-black opacity-75 ">
+              <div className=" relative p-6 inset-0 rounded-2xl bg-black opacity-80 ">
                <div className="z-10">
                {menu.map((item, idx) => (
                   <div key={idx} className="flex items-start  gap-4 mb-4">
