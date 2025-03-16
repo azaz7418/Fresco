@@ -8,8 +8,8 @@ const Header = () => {
       <div className=" container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link to="/">
-          <h2 className=" text-4xl font-semibold font-mono]">
-            fresco<span className=" text-accent">.</span>
+          <h2 className=" text-4xl font-semibold permanent-marker-regular">
+            fr<span className=" text-accent">e</span>sco<span className=" text-accent">.</span>
           </h2>
         </Link>
 

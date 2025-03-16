@@ -44,7 +44,7 @@ const Home = () => {
             src="https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/frill-free-img.png"
             alt=""
           />
-          <h1 className="text-[160px] font-bold text-primary">Fresco.</h1>
+          <h1 className="text-[160px] font-bold text-primary">Fresco</h1>
           <p className="text-accent text-[28px]">Italian Specialities</p>
           <div className=" flex items-center w-full max-w-4xl">
             <div className="flex-1 border-t border-gray-300"></div>
@@ -113,7 +113,7 @@ const Home = () => {
 
                                     {/* section 04 */}
       {/* part 01 */}
-      <div className="bg-primary relative py-10 px-5 grid grid-cols-2 h-fit">
+      <div className="bg-primary relative px-20 grid grid-cols-2 h-fit">
         <div className="relative w-full">
           <img
             className="w-full h-full"
@@ -152,7 +152,7 @@ const Home = () => {
 
       {/* part 02 */}
       <div
-        className=" mx-auto  relative bg-white text-black  bg-no-repeat px-5"
+        className=" mx-auto  relative bg-white text-black py-10 bg-no-repeat px-5"
         style={{
           backgroundImage:
             "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/quotes2-free-img.png')",
