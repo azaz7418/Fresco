@@ -83,3 +83,39 @@ export const menuData = [
     ],
   },
 ];
+
+export const menuItems = [
+    {
+      category: "Bruschetta Classico",
+      description: "Roasted eggplant spread, marinat",
+      icon: "https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/03/dumplings.png",
+    },
+    {
+      category: "Parmesan Bread",
+      description: "Ratione, nostrum mus hic harum aptent at quae sapien illo",
+      icon: "https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/03/noodles.png",
+    },
+    {
+      category: "Banana Waffles",
+      description: "Ratione, nostrum mus hic harum aptent at quae sapien illo",
+      icon: "https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/03/strawberry-waffles.png",
+    },
+  ];
+
+  export const menuItems2 = [
+    {
+      category: "Cheese Garlic Bread",
+      description: "Roasted eggplant spread, marinat",
+      icon: "https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/03/garlic-bread.png",
+    },
+    {
+      category: "Cottage Cheese ",
+      description: "Roasted eggplant spread, marinated tomatoes with garlic & fresh basil",
+      icon: "https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/03/cheese-fillings.png",
+    },
+    {
+      category: "Whole Grain Pasta",
+      description: "Roasted eggplant spread, marinated tomatoes with garlic & fresh basil",
+      icon: "https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2021/03/pizza.png",
+    },
+  ];

@@ -23,7 +23,7 @@ const testimonials = [
 const Home = () => {
   return (
     <div
-      className="relative bg-no-repeat bg-cover bg-fixed"
+      className="relative bg-no-repeat bg-cover bg-center bg-fixed"
       style={{
         backgroundImage:
           "url(https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/fresco-pizza-top.jpg)",
@@ -44,7 +44,7 @@ const Home = () => {
             src="https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/frill-free-img.png"
             alt=""
           />
-          <h1 className="text-[160px] font-bold text-primary">Fresco</h1>
+          <h1 className="text-[160px] font-bold font-berkshire text-primary">Fresco</h1>
           <p className="text-accent text-[28px]">Italian Specialities</p>
           <div className=" flex items-center w-full max-w-4xl">
             <div className="flex-1 border-t border-gray-300"></div>
@@ -61,10 +61,10 @@ const Home = () => {
 
       {/* section 02 */}
       <div
-        className="relative bg-cover bg-no-repeat bg-center bg-fixed py-20 px-5 "
+        className="relative bg-cover bg-center bg-fixed bg-no-repeat py-20 px-5 "
         style={{
           backgroundImage:
-            "url(https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/pic28-free-img.jpg)",
+            "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/pic28-free-img.jpg')",
         }}
       >
         <div className="   mx-auto px-6 items-center grid grid-cols-7 ">

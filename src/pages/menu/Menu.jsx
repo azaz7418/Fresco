@@ -1,4 +1,4 @@
-import { menuData } from "./MenuItem";
+import { menuData, menuItems, menuItems2 } from "./MenuItem";
 
 const Menu = () => {
   return (
@@ -13,7 +13,7 @@ const Menu = () => {
       >
         <div className="px-8 py-32 z-30">
           <div className="pl-6 ">
-            <h1 className="text-7xl font-bold mb-5">Menu.</h1>
+            <h1 className="text-7xl font-bold font-berkshire mb-5">Menu.</h1>
             <img
               src="https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/frill-free-img.png"
               alt=""
@@ -25,7 +25,7 @@ const Menu = () => {
       {/* part 02 */}
       {menuData.map((itm, index) => {
         return index % 2 == 0 ? (
-          <div key={index} className=" bg-gray-100 px-20 py-10 flex items-center justify-center ">
+          <div key={index} className=" bg-primary px-20 py-10 flex items-center justify-center ">
             <div className=" flex items-center justify-center gap-5 w-[75%]">
               {/* Left Image Section */}
               <div className=" w-[45%] ">
@@ -34,7 +34,7 @@ const Menu = () => {
               {/* Right Menu Section */}
               <div className=" w-[55%] p-6 h-full">
                 <div className=" space-y-5 py-5">
-                  <h2 className="text-4xl text-black font-bold font-serif mb-4">{itm.category}</h2>
+                  <h2 className="text-4xl text-black mb-4  font-berkshire">{itm.category}</h2>
                   <div className=" w-[25%]">
                     <img src={itm.underLine} alt="" />
                   </div>
@@ -62,7 +62,7 @@ const Menu = () => {
               {/* Left Menu Section */}
               <div className=" w-[55%] p-6 h-full">
                 <div className=" space-y-5 py-5">
-                  <h2 className="text-4xl text-black font-bold font-serif mb-4">{itm.category}</h2>
+                  <h2 className="text-4xl text-black  font-berkshire mb-4">{itm.category}</h2>
                   <div className=" w-[25%]">
                     <img src={itm.underLine} alt="" />
                   </div>
@@ -90,6 +90,44 @@ const Menu = () => {
           </div>
         );
       })}
+      {/* Part 03 */}
+      <div className="flex flex-col items-center bg-cover bg-center bg-gray-100 px-20 py-10"
+      style={{
+        backgroundImage:
+          "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/pic28-free-img.jpg')",
+      }}
+      >
+        <h2 className="text-3xl font-semibold text-gray-900 mb-6">Six Tasty Lunches for $9</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[menuItems, menuItems2].map((menu, index) => (
+            <div
+              key={index}
+              className="bg-cover bg-center rounded-2xl shadow-lg"
+              style={{
+                backgroundImage:
+                  "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/12/Pasta.jpg')",
+              }}
+            >
+              {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
+
+              <div className=" relative p-6 inset-0 rounded-2xl bg-black opacity-75 ">
+               <div className="z-10">
+               {menu.map((item, idx) => (
+                  <div key={idx} className="flex items-start  gap-4 mb-4">
+                    <img className="text-2xl" src={item.icon} alt="" />
+                    <span></span>
+                    <div>
+                      <h3 className="text-lg font-bold text-white">{item.category}</h3>
+                      <p className="text-sm text-gray-200">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
+               </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
