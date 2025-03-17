@@ -8,23 +8,17 @@ const links = [
     path: "/",
   },
   {
-    name: "services",
-    path: "/services",
+    name: "menu",
+    path: "/menu",
   },
   {
-    name: "resume",
-    path: "/resume",
-  },
-  {
-    name: "work",
-    path: "/work",
+    name: "about us",
+    path: "/aboutUs",
   },
   {
     name: "contact",
     path: "/contact",
-  }
-  
-  
+  },
 ];
 const MobileNav = () => {
   const [isActiv, setIsActiv] = useState(false);
@@ -37,20 +31,18 @@ const MobileNav = () => {
       <div className={`${isActiv ? " block  w-full h-screen absolute right-0 top-0 " : " hidden"}`}>
         <div className=" grid grid-flow-col grid-col-6 ">
           <div onClick={navMenue} className=" col-span-2 bg-transparent   "></div>
-          <div className=" col-span-4 bg-black  h-screen">
+          <div className=" col-span-4 bg-yellow-50  h-screen">
             <div className=" flex justify-between items-center p-5">
-              
-
               <RxCross2 onClick={navMenue} className=" text-[25px]  text-accent" />
             </div>
             <Link className=" text-center mt-2 mb-5" to="/">
-              <h2 className=" text-4xl mt-4 mb-10 font-semibold">
-                Azaz<span className=" text-accent">.</span>
+              <h2 className=" text-4xl font-semibold permanent-marker-regular">
+                fre<span className=" text-accent">s</span>co<span className=" text-accent">.</span>
               </h2>
             </Link>
 
             {/* menu */}
-            <div className="overflow-y-scroll" style={{height:"calc(100vh - 170px)"}}>
+            <div className="overflow-y-scroll" style={{ height: "calc(100vh - 170px)" }}>
               {links.map((link) => {
                 return (
                   <div key={link.id} className="flex justify-center align-middle ">
