@@ -3,7 +3,6 @@ import { menuData, menuItems, menuItems2 } from "./MenuItem";
 const Menu = () => {
   return (
     <div>
-      {/* <div className="absolute inset-0 bg-black opacity-60"></div> */}
       <div
         className=" relative bg-no-repeat bg-center bg-cover brightness-50"
         style={{
@@ -25,14 +24,14 @@ const Menu = () => {
       {/* part 02 */}
       {menuData.map((itm, index) => {
         return index % 2 == 0 ? (
-          <div key={index} className=" bg-primary px-20 py-10 flex items-center justify-center ">
-            <div className=" flex items-center justify-center gap-5 w-[75%]">
+          <div key={index} className=" bg-primary py-4 px-5 md:px-20 md:py-10 flex items-center justify-center ">
+            <div className=" flex items-center justify-center gap-5 md:w-[75%] flex-col md:flex-row">
               {/* Left Image Section */}
-              <div className=" w-[45%] ">
-                <img src={itm.image} alt="Pasta" className="rounded-xl" />
+              <div className=" md:w-[45%] w-[80%] ">
+                <img src={itm.image} alt="Pasta" className="rounded-xl shadow-2xl shadow-slate-500" />
               </div>
               {/* Right Menu Section */}
-              <div className=" w-[55%] p-6 h-full">
+              <div className=" md:w-[55%] p-6 h-full">
                 <div className=" space-y-5 py-5">
                   <h2 className="text-4xl text-black mb-4  font-berkshire">{itm.category}</h2>
                   <div className=" w-[25%]">
@@ -43,7 +42,7 @@ const Menu = () => {
                   {/* Menu Items */}
                   {itm.items?.map((it, index) => {
                     return (
-                      <div key={index} className="flex justify-between items-center">
+                      <div key={index} className="flex justify-between items-center gap-4">
                         <div>
                           <h3 className="text-xl mb-3 text-black font-semibold">{it.title}</h3>
                           <p className="text-gray-500 text-sm">{it.description}</p>
@@ -57,12 +56,12 @@ const Menu = () => {
             </div>
           </div>
         ) : (
-          <div key={index} className=" bg-orange-50 px-20 py-10 flex items-center justify-center ">
-            <div className=" flex items-center justify-center gap-5 w-[75%]">
+          <div key={index} className=" bg-orange-50 md:px-20 md:py-10 py-4 px-5 flex items-center justify-center">
+            <div className=" flex items-center justify-center gap-5 md:w-[75%] md:flex-row  flex-col-reverse">
               {/* Left Menu Section */}
-              <div className=" w-[55%] p-6 h-full">
+              <div className=" md:w-[55%] p-6 h-full">
                 <div className=" space-y-5 py-5">
-                  <h2 className="text-4xl text-black  font-berkshire mb-4">{itm.category}</h2>
+                  <h2 className="text-4xl text-black mb-4  font-berkshire">{itm.category}</h2>
                   <div className=" w-[25%]">
                     <img src={itm.underLine} alt="" />
                   </div>
@@ -71,7 +70,7 @@ const Menu = () => {
                   {/* Menu Items */}
                   {itm.items?.map((it, index) => {
                     return (
-                      <div key={index} className="flex justify-between items-center">
+                      <div key={index} className="md:flex justify-between items-center gap-4">
                         <div>
                           <h3 className="text-xl mb-3 text-black font-semibold">{it.title}</h3>
                           <p className="text-gray-500 text-sm">{it.description}</p>
@@ -83,8 +82,8 @@ const Menu = () => {
                 </div>
               </div>
               {/* Right Image Section */}
-              <div className=" w-[45%] ">
-                <img src={itm.image} alt="Pasta" className="rounded-xl" />
+              <div className=" md:w-[45%] w-[80%]">
+                <img src={itm.image} alt="Pasta" className="rounded-xl shadow-2xl shadow-slate-500" />
               </div>
             </div>
           </div>

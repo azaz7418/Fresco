@@ -7,7 +7,7 @@ import { Outlet } from "react-router-dom";
 // eslint-disable-next-line react/prop-types
 const Layout = () => {
   return (
-    <body className=" body *:m-0 *:box-border min-h-screen flex flex-col">
+    <body className=" body *:m-0 *:p-0 *:box-border min-h-screen flex flex-col">
       <Header />
       <div className="">
         <Outlet />

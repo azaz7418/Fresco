@@ -33,22 +33,22 @@ const Home = () => {
       <div className="absolute inset-0 bg-black opacity-60"></div>
 
       {/* Content Section */}
-      <div className="relative flex items-center justify-around py-40 px-20">
+      <div className="relative flex items-center justify-around py-10  md:py-40 md:px-20">
         <img
           className="h-full"
           src="https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/fork-free-img.png"
           alt=""
         />
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-10">
           <img
             src="https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/frill-free-img.png"
             alt=""
           />
-          <h1 className="text-[160px] font-bold font-berkshire text-primary">Fresco</h1>
-          <p className="text-accent text-[28px]">Italian Specialities</p>
+          <h1 className="md:text-[160px] text-6xl font-bold font-berkshire text-primary">Fresco</h1>
+          <p className="text-accent md:text-[28px] text-xl">Italian Specialities</p>
           <div className=" flex items-center w-full max-w-4xl">
             <div className="flex-1 border-t border-gray-300"></div>
-            <h2 className="px-6 text-primary text-2xl font-semibold tracking-widest">Good Food | Good Wine</h2>
+            <h2 className="px-6 text-primary md:text-2xl text-xl font-semibold tracking-widest">Good Food | Good Wine</h2>
             <div className="flex-1 border-t border-gray-300"></div>
           </div>
         </div>
@@ -61,16 +61,16 @@ const Home = () => {
 
       {/* section 02 */}
       <div
-        className="relative bg-cover bg-center bg-fixed bg-no-repeat py-20 px-5 "
+        className="relative bg-cover bg-center bg-fixed bg-no-repeat py-10  md:py-40 md:px-20 "
         style={{
           backgroundImage:
             "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/pic28-free-img.jpg')",
         }}
       >
-        <div className="   mx-auto px-6 items-center grid grid-cols-7 ">
+        <div className="   mx-auto px-6 items-center grid md:grid-cols-7 ">
           {/* Left Content */}
           <div className="absolute inset-0 bg-white opacity-60"></div>
-          <div className=" relative flex flex-col pl-7 col-span-3 gap-5 ">
+          <div className=" relative text-center md:text-start flex flex-col items-center md:items-start pl-7 col-span-3 g ">
             <p className="text-lg font-semibold italic text-gray-700">{"Country's Most Loved!"}</p>
             <h1 className="text-5xl font-bold text-gray-900 mt-2">Welcome</h1>
             <p className="text-2xl font-semibold text-gray-900 mt-4">
@@ -86,7 +86,7 @@ const Home = () => {
           </div>
 
           {/* Right Content */}
-          <div className=" grid grid-flow-col grid-cols-7 gap-6 mt-10 md:mt-0 col-span-4">
+          <div className=" grid md:grid-flow-col grid-flow-col md:grid-cols-7 items-center justify-center gap-6 mt-10 md:mt-0 col-span-4">
             {/* Image 1 */}
             <img
               className="shadow-lg w-full h-full col-span-3  relative"
@@ -95,16 +95,16 @@ const Home = () => {
             />
 
             {/* Image 2 with Overlay */}
-            <div className="relative w-full col-span-4 ">
+            <div className="relative md:w-full col-span-4 ">
               <img
                 className="shadow-lg w-full h-full"
                 src="https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2019/12/food-table-meet.jpg"
                 alt="Restaurant Dining"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end items-center text-white py-10 px-5">
-                <h2 className="text-5xl font-bold">Hours</h2>
-                <p className="mt-5 text-lg font-semibold">Monday - Saturday | 9AM - 1PM</p>
-                <p className="mb-10 text-lg font-semibold">Saturday - Sunday | 9AM - 4AM</p>
+              <div className="absolute inset-0 text-center gap-4 bg-black bg-opacity-40 flex flex-col justify-end items-center text-white py-10 ">
+                <h2 className="md:text-5xl text-3xl font-bold">Hours</h2>
+                <p className="mt-5 text-sm font-semibold">Monday - Saturday | 9AM - 1PM</p>
+                <p className="md:mb-10 text-sm font-semibold">Saturday - Sunday | 9AM - 4AM</p>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ const Home = () => {
 
                                     {/* section 04 */}
       {/* part 01 */}
-      <div className="bg-primary relative px-20 grid grid-cols-2 h-fit">
+      <div className="bg-primary relative px-20 grid md:grid-cols-2 md:gap-1 gap-12 h-fit">
         <div className="relative w-full">
           <img
             className="w-full h-full"
@@ -131,8 +131,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primary flex flex-col items-start justify-around relative bg-opacity-50 px-10 text-black ">
-          <h1 className="text-xl font-bold mb-4">Wednesday's Means</h1>
+        <div className="bg-primary flex flex-col items-center md:text-start text-center md:items-start justify-around relative bg-opacity-50 md:px-10 text-black ">
+          <h1 className="text-xl font-bold md:mb-4">Wednesday's Means</h1>
           <h2 className="text-5xl font-semibold my-8">Happy Hours!</h2>
           <p className="text-xl mb-4">
             Half Price Bottles of Wine and Six Tasty <br />
@@ -152,7 +152,7 @@ const Home = () => {
 
       {/* part 02 */}
       <div
-        className=" mx-auto  relative bg-white text-black py-10 bg-no-repeat px-5"
+        className=" mx-auto  relative bg-white text-black py-14 md:py-10 bg-no-repeat px-5"
         style={{
           backgroundImage:
             "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/quotes2-free-img.png')",
@@ -170,7 +170,7 @@ const Home = () => {
           <h2 className=" relative text-3xl font-bold text-center mb-8">Happy Customers!</h2>
           <div className=" relative max-w-4xl mx-auto">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg mb-6 flex items-center">
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg mb-6 flex items-center md:flex-row flex-col">
                 <img src={testimonial.image} alt={testimonial.name} className="w-24 h-24 rounded-full mr-6" />
                 <div>
                   <div className="flex items-center text-gray-600">
