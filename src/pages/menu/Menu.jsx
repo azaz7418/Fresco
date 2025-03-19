@@ -90,11 +90,12 @@ const Menu = () => {
         );
       })}
       {/* Part 03 */}
-      <div className="flex flex-col items-center bg-cover bg-center bg-gray-100 px-20 py-10"
-      style={{
-        backgroundImage:
-          "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/pic28-free-img.jpg')",
-      }}
+      <div
+        className="flex flex-col items-center bg-cover bg-center bg-gray-100 px-20 py-10"
+        style={{
+          backgroundImage:
+            "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/pic28-free-img.jpg')",
+        }}
       >
         <h2 className="text-3xl font-semibold text-gray-900 mb-6">Six Tasty Lunches for $9</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -107,21 +108,19 @@ const Menu = () => {
                   "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/12/Pasta.jpg')",
               }}
             >
-              {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
-
               <div className=" relative p-6 inset-0 rounded-2xl bg-black opacity-80 ">
-               <div className="z-10">
-               {menu.map((item, idx) => (
-                  <div key={idx} className="flex items-start  gap-4 mb-4">
-                    <img className="text-2xl" src={item.icon} alt="" />
-                    <span></span>
-                    <div>
-                      <h3 className="text-lg font-bold text-white">{item.category}</h3>
-                      <p className="text-sm text-gray-200">{item.description}</p>
+                <div className="z-10">
+                  {menu.map((item, idx) => (
+                    <div key={idx} className="flex items-start  gap-4 mb-4">
+                      <img className="text-2xl" src={item.icon} alt="" />
+                      <span></span>
+                      <div>
+                        <h3 className="text-lg font-bold text-white">{item.category}</h3>
+                        <p className="text-sm text-gray-200">{item.description}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
-               </div>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
