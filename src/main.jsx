@@ -7,12 +7,14 @@ import Layout from './layout/Layout.jsx'
 
 import Contact from './pages/contact/Contact.jsx'
 import Menu from './pages/menu/Menu.jsx'
+import AboutUs from './pages/AboutUs/AboutUs.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
  <Route path='/' element={<Layout/>}>
   <Route path='/' element={<Home/>} />
   <Route path='/menu' element={<Menu/>} />
+  <Route path='/aboutUs' element={<AboutUs/>} />
   <Route path='/contact' element={<Contact/>} />
  </Route>
   )
