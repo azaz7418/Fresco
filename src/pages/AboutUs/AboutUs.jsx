@@ -1,3 +1,5 @@
+import { chefs } from "../menu/MenuItem";
+
 const AboutUs = () => {
   return (
     <div>
@@ -43,7 +45,7 @@ const AboutUs = () => {
             platea! Libero nam, harum quisque turpis fames sollicitudin blanditiis est aliquam aptent blandit class.
           </p>
         </div>
-
+        
         {/* Right: Images Grid */}
         <div className="lg:w-1/2 grid grid-cols-2 gap-4">
           <img
@@ -62,6 +64,69 @@ const AboutUs = () => {
               alt="Restaurant Dining"
               className="rounded-2xl w-full h-72 object-cover "
             />
+          </div>
+        </div>
+      </section>
+      {/* section 03 */}
+      <section
+        // className=" text-white py-12 px-6"
+        className=" relative bg-no-repeat bg-center bg-cover"
+        style={{
+          backgroundImage:
+            "url(https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2019/12/About-us-banner.jpg)",
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-60"></div>
+
+        <div className="text-center mb-8">
+          <h2 className=" relative text-3xl font-semibold">Our Chefs</h2>
+        </div>
+        <div className=" relative grid grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto">
+          <div className="col-span-1 md:col-span-3 grid grid-cols-3 ">
+            {chefs.slice(0, 3).map((chef, index) => (
+              <div key={index} className="relative bg-black  border-2 border-orange-500">
+                <img src={chef.image} alt={chef.name} className="w-full h-full object-cover opacity-80" />
+                <div
+                  className="absolute bottom-0 left-0 flex flex-col items-center justify-end w-full h-2/4 p-4"
+                  style={{
+                    backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%)",
+                  }}
+                >
+                  <h3 className="text-lg font-bold">{chef.name}</h3>
+                  <p className="text-sm italic">{chef.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="col-span-1 md:col-span-3 grid grid-cols-2  ">
+            <div className="relative bg-black  overflow-hidden border-2 border-orange-500">
+              <img src={chefs[3].image} alt={chefs[3].name} className="w-full h-full object-cover opacity-80" />
+              <div
+                className="absolute bottom-0 left-0 flex flex-col items-center justify-end w-full h-2/4 p-4"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%)",
+                }}
+              >
+                <h3 className="text-lg font-bold">{chefs[3].name}</h3>
+                <p className="text-sm italic">{chefs[3].role}</p>
+              </div>
+            </div>
+            <div className="relative bg-black  overflow-hidden border-2 border-orange-500 flex items-center justify-center">
+              <img
+                src="https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/02/chef05-free-img.jpg"
+                alt="Interns"
+                className="w-full h-64 object-cover opacity-80"
+              />
+              <div
+                className="absolute bottom-0 left-0 flex flex-col items-center justify-end w-full h-2/4 p-4"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%)",
+                }}
+              >
+                <h3 className="text-lg font-bold">Looking For Management Interns</h3>
+                <button className="mt-2 bg-orange-500 text-white px-4 py-2 rounded">Apply Today!</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
