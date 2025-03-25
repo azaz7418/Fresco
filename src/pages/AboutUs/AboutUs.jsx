@@ -70,7 +70,7 @@ const AboutUs = () => {
       {/* section 03 */}
       <section
         // className=" text-white py-12 px-6"
-        className=" relative bg-no-repeat bg-center bg-cover"
+        className=" relative bg-no-repeat bg-center bg-cover py-4 px-5 md:px-20 md:py-10"
         style={{
           backgroundImage:
             "url(https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2019/12/About-us-banner.jpg)",
