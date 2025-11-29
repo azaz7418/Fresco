@@ -1,4 +1,4 @@
-import {  FaFacebookF, FaGooglePlusG, FaQuoteLeft, FaQuoteRight, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaGooglePlusG, FaQuoteLeft, FaQuoteRight, FaTwitter } from "react-icons/fa";
 
 /* eslint-disable react/no-unescaped-entities */
 const testimonials = [
@@ -33,7 +33,7 @@ const Home = () => {
       <div className="absolute inset-0 bg-black opacity-60"></div>
 
       {/* Content Section */}
-      <div className="relative flex items-center justify-around py-10  md:py-40 md:px-20">
+      <div className="relative flex flex-row items-center justify-center md:justify-around py-10 md:py-40 md:px-20">
         <img
           className="h-full"
           src="https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/fork-free-img.png"
@@ -44,11 +44,13 @@ const Home = () => {
             src="https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/frill-free-img.png"
             alt=""
           />
-          <h1 className="md:text-[160px] text-6xl font-bold font-berkshire text-primary">Fresco</h1>
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold font-berkshire text-primary">Fresco</h1>
           <p className="text-accent md:text-[28px] text-xl">Italian Specialities</p>
           <div className=" flex items-center w-full max-w-4xl">
             <div className="flex-1 border-t border-gray-300"></div>
-            <h2 className="px-6 text-primary md:text-2xl text-xl font-semibold tracking-widest">Good Food | Good Wine</h2>
+            <h2 className="px-6 text-primary md:text-2xl text-lg font-semibold tracking-widest text-center">
+              Good Food | Good Wine
+            </h2>
             <div className="flex-1 border-t border-gray-300"></div>
           </div>
         </div>
@@ -67,7 +69,7 @@ const Home = () => {
             "url('https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/pic28-free-img.jpg')",
         }}
       >
-        <div className="   mx-auto px-6 items-center grid md:grid-cols-7 ">
+        <div className="   mx-auto px-6 items-center flex flex-col md:grid md:grid-cols-7 ">
           {/* Left Content */}
           <div className="absolute inset-0 bg-white opacity-60"></div>
           <div className=" relative text-center md:text-start flex flex-col items-center md:items-start pl-7 col-span-3 g ">
@@ -86,7 +88,7 @@ const Home = () => {
           </div>
 
           {/* Right Content */}
-          <div className=" grid md:grid-flow-col grid-flow-col md:grid-cols-7 items-center justify-center gap-6 mt-10 md:mt-0 col-span-4">
+          <div className=" flex flex-col md:grid md:grid-cols-7 items-center justify-center gap-6 mt-10 md:mt-0 col-span-4">
             {/* Image 1 */}
             <img
               className="shadow-lg w-full h-full col-span-3  relative"
@@ -111,9 +113,9 @@ const Home = () => {
         </div>
       </div>
 
-                                    {/* section 04 */}
+      {/* section 04 */}
       {/* part 01 */}
-      <div className="bg-primary relative px-20 grid md:grid-cols-2 md:gap-1 gap-12 h-fit">
+      <div className="bg-primary relative px-4 md:px-20 grid md:grid-cols-2 md:gap-1 gap-12 h-fit">
         <div className="relative w-full">
           <img
             className="w-full h-full"
@@ -149,7 +151,6 @@ const Home = () => {
         </div>
       </div>
 
-
       {/* part 02 */}
       <div
         className=" mx-auto  relative bg-white text-black py-14 md:py-10 bg-no-repeat px-5"
@@ -170,7 +171,10 @@ const Home = () => {
           <h2 className=" relative text-3xl font-bold text-center mb-8">Happy Customers!</h2>
           <div className=" relative max-w-4xl mx-auto">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg mb-6 flex items-center md:flex-row flex-col">
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-lg mb-6 flex items-center md:flex-row flex-col"
+              >
                 <img src={testimonial.image} alt={testimonial.name} className="w-24 h-24 rounded-full mr-6" />
                 <div>
                   <div className="flex items-center text-gray-600">
@@ -190,10 +194,10 @@ const Home = () => {
                 <FaFacebookF />
               </div>
               <div className=" p-3 bg-accent hover:bg-accent-hover rounded-full">
-                <FaTwitter  />
+                <FaTwitter />
               </div>
               <div className=" p-3 bg-accent hover:bg-accent-hover rounded-full">
-                <FaGooglePlusG  />
+                <FaGooglePlusG />
               </div>
             </div>
           </div>

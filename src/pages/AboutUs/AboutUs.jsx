@@ -45,7 +45,7 @@ const AboutUs = () => {
             platea! Libero nam, harum quisque turpis fames sollicitudin blanditiis est aliquam aptent blandit class.
           </p>
         </div>
-        
+
         {/* Right: Images Grid */}
         <div className="lg:w-1/2 grid grid-cols-2 gap-4">
           <img
@@ -81,7 +81,7 @@ const AboutUs = () => {
         <div className="text-center mb-8">
           <h2 className=" relative text-3xl font-semibold">Our Chefs</h2>
         </div>
-        <div className=" relative grid grid-cols-2 md:grid-cols-3 max-w-5xl mx-auto">
+        <div className=" relative grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto">
           <div className="col-span-1 md:col-span-3 grid grid-cols-3 ">
             {chefs.slice(0, 3).map((chef, index) => (
               <div key={index} className="relative bg-black  border-2 border-orange-500">
@@ -98,7 +98,7 @@ const AboutUs = () => {
               </div>
             ))}
           </div>
-          <div className="col-span-1 md:col-span-3 grid grid-cols-2  ">
+          <div className="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-2  ">
             <div className="relative bg-black  overflow-hidden border-2 border-orange-500">
               <img src={chefs[3].image} alt={chefs[3].name} className="w-full h-full object-cover opacity-80" />
               <div

@@ -70,7 +70,7 @@ const Menu = () => {
                   {/* Menu Items */}
                   {itm.items?.map((it, index) => {
                     return (
-                      <div key={index} className="md:flex justify-between items-center gap-4">
+                      <div key={index} className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <div>
                           <h3 className="text-xl mb-3 text-black font-semibold">{it.title}</h3>
                           <p className="text-gray-500 text-sm">{it.description}</p>
